@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Plane</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="play">GO</string>
+    <string name="play_button">play button</string>
+    -
+    <string name="hello_blank_fragment">LOOSER</string>
+    -
+    <string name="win">WINNER</string>
+</resources>

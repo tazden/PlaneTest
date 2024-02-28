@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background04"
+    tools:context="com.huda.kickfoot.GameFragment">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text_box02"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+        android:id="@+id/planecrash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/text_new_best_score"
+        app:layout_constraintTop_toTopOf="@id/box"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/planecrash"
+        android:src="@drawable/text_score02"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/backtextInpTextInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/score"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"/>
+
+    <TextView
+        android:id="@+id/textInp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rockwell_extra_bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/backtextInpTextInp"
+        app:layout_constraintEnd_toEndOf="@id/backtextInpTextInp"
+        app:layout_constraintTop_toTopOf="@id/backtextInpTextInp"
+        app:layout_constraintBottom_toBottomOf="@id/backtextInpTextInp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/backtextInpTextInp"
+        app:layout_constraintStart_toStartOf="@id/box"
+        app:layout_constraintEnd_toEndOf="@id/box"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/text_play_again"/>
+
+    <ImageView
+        android:id="@+id/ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginBottom="54dp"
+        android:src="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintStart_toStartOf="@id/box" />
+
+    <ImageView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="54dp"
+        android:src="@drawable/close"
+        app:layout_constraintBottom_toBottomOf="@id/box"
+        app:layout_constraintStart_toEndOf="@id/ok" />
+    <ImageView
+        android:id="@+id/best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/text_best"
+        android:layout_marginBottom="65dp"/>
+    <ImageView
+        android:id="@+id/backint"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/score"/>
+    <TextView
+        android:id="@+id/bestScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/rockwell_extra_bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/backint"
+        app:layout_constraintBottom_toBottomOf="@id/backint"
+        app:layout_constraintStart_toStartOf="@id/backint"
+        app:layout_constraintEnd_toEndOf="@id/backint"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

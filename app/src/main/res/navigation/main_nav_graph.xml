@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/startUpFragment">
+
+    <fragment
+        android:id="@+id/startUpFragment"
+        android:name="com.huda.kickfoot.GoFragment"
+        android:label="fragment_start_up"
+        tools:layout="@layout/fragment_go" >
+
+        <action
+            android:id="@+id/play"
+            app:destination="@id/gameFragment"
+            app:popUpTo="@id/startUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.huda.kickfoot.GameFragment"
+        android:label="fragment_game"
+        tools:layout="@layout/fragment_game" />
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.huda.kickfoot.GameOverFragment"
+        android:label="fragment_game_over"
+        tools:layout="@layout/fragment_game_over" />
+    <action
+        android:id="@+id/game_over"
+        app:destination="@id/gameOverFragment"
+        app:popUpTo="@id/main_nav_graph" />
+    <fragment
+        android:id="@+id/record"
+        android:name="ru.momentkesh.kickfootball.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
+</navigation>
